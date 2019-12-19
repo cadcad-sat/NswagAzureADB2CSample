@@ -1,0 +1,4 @@
+bin
+obj
+.vscode
+AuthWebApi.csproj.user
