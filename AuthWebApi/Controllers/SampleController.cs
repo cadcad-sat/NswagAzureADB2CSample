@@ -26,7 +26,9 @@ namespace AuthWebApi.Controllers
         public async Task<ActionResult> Get()
         {
             await Task.Delay(0);
-            return Ok(Guid.NewGuid());
+            var id = Guid.NewGuid();
+            logger.LogDebug(id.ToString());
+            return Ok(id);
         }
     }
 }
